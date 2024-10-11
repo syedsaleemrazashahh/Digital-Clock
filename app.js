@@ -60,20 +60,18 @@
 // }
 // setInterval(watch, 1000);
 
-
 function watch() {
   let date = new Date();
 
   let hours = date.getHours();
   let minutes = date.getMinutes();
   let seconds = date.getSeconds();
-  let session = "AM"; 
+  let session = "AM";
 
   if (hours >= 12) {
-    session = "PM"; 
+    session = "PM";
   }
 
- 
   hours = hours % 12;
   hours = hours === 0 ? 12 : hours;
   minutes = minutes < 10 ? "0" + minutes : minutes;
@@ -104,7 +102,7 @@ function watch() {
     "November",
     "December",
   ];
-  let month = months[date.getMonth()]; 
+  let month = months[date.getMonth()];
   let day = date.getDate();
   let year = date.getFullYear();
 

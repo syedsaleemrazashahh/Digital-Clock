@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -6,7 +6,7 @@
 }
 
 body,
-.time,
+.time,s
 .left-side,
 .right-side,
 .right-top,
@@ -79,4 +79,71 @@ body {
 
 #second {
   color: white;
+} */
+
+/* General body styling */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #121212;
+  color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Heading styles */
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #00ffcc;
+}
+
+/* Box styling */
+.box {
+  background-color: #1e1e1e;
+  border-radius: 15px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Time display styling */
+#timeprint {
+  font-size: 4rem;
+  color: #00ffcc;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+/* Day and Date display styling */
+#dayprint {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 300;
+}
+
+/* Adding smooth transition to make clock feel dynamic */
+#timeprint,
+#dayprint {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Responsive styling for smaller devices */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  #timeprint {
+    font-size: 3rem;
+  }
+
+  #dayprint {
+    font-size: 1.2rem;
+  }
 }
